@@ -1,9 +1,9 @@
-<% provide(:title, "Log in") %>
-<h1>Log in</h1>
+<% provide(:title, "Giriş") %>
+<h1>Giriş</h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <p>test login: example@railstutorial.org | foobar</p>
+     
     <%= form_for(:session, url: login_path) do |f| %>
 
       <%= f.label :email %>
@@ -14,12 +14,12 @@
 
       <%= f.label :remember_me, class: "checkbox inline" do %>
         <%= f.check_box :remember_me %>
-        <span>Remember me on this computer</span>
+        <span>Hatırla beni !</span>
       <% end %>
 
-      <%= f.submit "Log in", class: "btn btn-primary" %>
+      <%= f.submit "Giriş", class: "btn btn-primary" %>
     <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    <p>Yeni Kullanıcı <%= link_to "Kayıt ol", signup_path %></p>
   </div>
 </div>
